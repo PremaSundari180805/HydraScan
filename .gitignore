@@ -1,0 +1,39 @@
+# Python virtual environment
+backend/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# YOLO model weights (large files)
+*.pt
+*.onnx
+
+# Node modules
+node_modules/
+FaceDetector/node_modules/
+
+# Android build
+android/.gradle/
+android/build/
+android/app/build/
+FaceDetector/android/.gradle/
+FaceDetector/android/.kotlin/
+FaceDetector/android/app/build/
+FaceDetector/android/app/.cxx/
+
+# iOS build
+ios/Pods/
+ios/build/
+FaceDetector/ios/Pods/
+FaceDetector/ios/build/
+
+# Environment files
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
