@@ -3,13 +3,18 @@
 jest.mock('react-native-vision-camera', () => ({
   Camera: require('react-native').View,
   useCameraDevice: () => undefined,
-  useCameraPermission: () => ({ hasPermission: true, requestPermission: jest.fn() }),
+  useCameraPermission: () => ({
+    hasPermission: true,
+    requestPermission: jest.fn(),
+  }),
   useFrameProcessor: processor => processor,
-  runAtTargetFps: (_fps, callback) => callback(),
+  runAtTargetFps: (fps, callback) => callback(),
 }));
 
-jest.mock('vision-camera-resize-plugin', () => ({
-  useResizePlugin: () => ({ resize: jest.fn(() => new Uint8Array()) }),
+jest.mock('react-native-vision-camera-resizer', () => ({
+  useResizePlugin: () => ({
+    resize: jest.fn(() => new Uint8Array()),
+  }),
 }));
 
 jest.mock('react-native-worklets-core', () => ({

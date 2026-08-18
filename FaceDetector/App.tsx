@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import { Camera, useCameraDevice, useCameraPermission, useFrameProcessor, runAtTargetFps } from 'react-native-vision-camera';
-import { useResizePlugin } from 'vision-camera-resize-plugin';
-import { Worklets } from 'react-native-worklets-core';
+import { useResizer } from 'react-native-vision-camera-resizer';
+import { createRunOnJS } from 'react-native-worklets-core';
 
 // React Native exposes the Web-compatible base64 encoder at runtime, but its
 // TypeScript globals do not currently declare it.
@@ -10,7 +10,7 @@ declare function btoa(data: string): string;
 
 // WEBSOCKET CONFIGURATION: Point this to your Python backend running on your PC
 // Note: If using physical device, replace with your PC's local IP address (e.g. 192.168.x.x)
-const SERVER_URL = "ws://192.168.1.100:8000/ws";
+const SERVER_URL = "ws://172.21.0.250:8000/ws";
 
 const { width: SCREEN_W, height: SCREEN_H } = Dimensions.get('window');
 const FRAME_WIDTH = 480;
@@ -30,8 +30,14 @@ export default function App() {
 
   const [faces, setFaces] = useState<BoundingBox[]>([]);
   const ws = useRef<WebSocket | null>(null);
-  const { resize } = useResizePlugin();
-
+  const { resizer, state, error } = useResizer({
+  width: FRAME_WIDTH,
+  height: FRAME_HEIGHT,
+  channelOrder: 'rgb',
+  dataType: 'uint8',
+  scaleMode: 'stretch',
+  pixelLayout: 'packed',
+});
   // 1. Initialize WebSocket connection
   useEffect(() => {
     ws.current = new WebSocket(SERVER_URL);
@@ -59,47 +65,48 @@ export default function App() {
     };
   }, []);
 
-  const sendFrameToServer = useCallback((rgbFrame: Uint8Array) => {
-    if (ws.current && ws.current.readyState === WebSocket.OPEN) {
-      // The resize plugin returns raw RGB pixels. Send their metadata alongside
-      // the pixels so the Python backend can rebuild the image correctly.
-      let binary = '';
-      const chunkSize = 0x8000;
-      for (let index = 0; index < rgbFrame.length; index += chunkSize) {
-        binary += String.fromCharCode(...rgbFrame.subarray(index, index + chunkSize));
-      }
-      ws.current.send(JSON.stringify({
-        width: FRAME_WIDTH,
-        height: FRAME_HEIGHT,
-        pixels: btoa(binary),
-      }));
+  const sendFrameToServer = useCallback((buffer: ArrayBuffer) => {
+  const rgbFrame = new Uint8Array(buffer);
+
+  if (ws.current && ws.current.readyState === WebSocket.OPEN) {
+    let binary = '';
+    const chunkSize = 0x8000;
+
+    for (let index = 0; index < rgbFrame.length; index += chunkSize) {
+      binary += String.fromCharCode(
+        ...rgbFrame.subarray(index, index + chunkSize)
+      );
     }
-  }, []);
 
-  // Expose JS function to the UI thread (Worklet)
-  const processFrameOnJS = Worklets.createRunOnJS(sendFrameToServer);
+    ws.current.send(JSON.stringify({
+      width: FRAME_WIDTH,
+      height: FRAME_HEIGHT,
+      pixels: btoa(binary),
+    }));
+  }
+}, []);
 
-  // 2. Continuously process camera frames
+const processFrameOnJS = createRunOnJS(sendFrameToServer);
   const frameProcessor = useFrameProcessor((frame) => {
     'worklet';
 
-    // Run at 15 FPS to ensure continuous streaming without network overload
     runAtTargetFps(15, () => {
       try {
-        // Resize the camera frame to raw RGB pixels for the backend.
-        const rgbFrame = resize(frame, {
-          scale: { width: FRAME_WIDTH, height: FRAME_HEIGHT },
-          pixelFormat: 'rgb',
-          dataType: 'uint8',
-        });
+        if (resizer == null) {
+          return;
+        }
 
-        // Pass to JS thread to send via WebSocket
-        processFrameOnJS(rgbFrame);
+        const resized = resizer.resize(frame);
+        const buffer = resized.getPixelBuffer();
+
+        processFrameOnJS(buffer);
+
+        resized.dispose();
       } catch (e) {
         console.log("Error resizing frame: ", e);
       }
     });
-  }, [processFrameOnJS]);
+  }, [resizer, processFrameOnJS]);
 
   useEffect(() => {
     if (!hasPermission) {

@@ -1,25 +1,25 @@
 {
-  "root": "D:\\final year\\mini_project\\Part2\\FaceDetector",
-  "reactNativePath": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native",
+  "root": "D:\\HydraScan\\HydraScan\\FaceDetector",
+  "reactNativePath": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native",
   "reactNativeVersion": "0.86",
   "dependencies": {
     "react-native-nitro-image": {
-      "root": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-nitro-image",
+      "root": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-nitro-image",
       "name": "react-native-nitro-image",
       "platforms": {
         "ios": {
-          "podspecPath": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-nitro-image\\NitroImage.podspec",
+          "podspecPath": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-nitro-image\\NitroImage.podspec",
           "version": "0.15.1",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-nitro-image\\android",
+          "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-nitro-image\\android",
           "packageImportPath": "import com.margelo.nitro.image.NitroImagePackage;",
           "packageInstance": "new NitroImagePackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "D:/final year/mini_project/Part2/FaceDetector/node_modules/react-native-nitro-image/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "D:/HydraScan/HydraScan/FaceDetector/node_modules/react-native-nitro-image/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -28,23 +28,23 @@
       }
     },
     "react-native-nitro-modules": {
-      "root": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-nitro-modules",
+      "root": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-nitro-modules",
       "name": "react-native-nitro-modules",
       "platforms": {
         "ios": {
-          "podspecPath": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-nitro-modules\\NitroModules.podspec",
+          "podspecPath": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-nitro-modules\\NitroModules.podspec",
           "version": "0.36.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-nitro-modules\\android",
+          "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-nitro-modules\\android",
           "packageImportPath": "import com.margelo.nitro.NitroModulesPackage;",
           "packageInstance": "new NitroModulesPackage()",
           "buildTypes": [],
           "libraryName": "NitroModulesSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "D:/final year/mini_project/Part2/FaceDetector/node_modules/react-native-nitro-modules/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "D:/HydraScan/HydraScan/FaceDetector/node_modules/react-native-nitro-modules/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -53,23 +53,23 @@
       }
     },
     "react-native-reanimated": {
-      "root": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-reanimated",
+      "root": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-reanimated",
       "name": "react-native-reanimated",
       "platforms": {
         "ios": {
-          "podspecPath": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-reanimated\\RNReanimated.podspec",
+          "podspecPath": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-reanimated\\RNReanimated.podspec",
           "version": "4.5.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-reanimated\\android",
+          "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-reanimated\\android",
           "packageImportPath": "import com.swmansion.reanimated.ReanimatedPackage;",
           "packageInstance": "new ReanimatedPackage()",
           "buildTypes": [],
           "libraryName": "rnreanimated",
           "componentDescriptors": [],
-          "cmakeListsPath": "D:/final year/mini_project/Part2/FaceDetector/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "D:/HydraScan/HydraScan/FaceDetector/node_modules/react-native-reanimated/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -78,17 +78,17 @@
       }
     },
     "react-native-safe-area-context": {
-      "root": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-safe-area-context",
+      "root": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-safe-area-context",
       "name": "react-native-safe-area-context",
       "platforms": {
         "ios": {
-          "podspecPath": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-safe-area-context\\react-native-safe-area-context.podspec",
+          "podspecPath": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-safe-area-context\\react-native-safe-area-context.podspec",
           "version": "5.8.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-safe-area-context\\android",
+          "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-safe-area-context\\android",
           "packageImportPath": "import com.th3rdwave.safeareacontext.SafeAreaContextPackage;",
           "packageInstance": "new SafeAreaContextPackage()",
           "buildTypes": [],
@@ -97,7 +97,7 @@
             "RNCSafeAreaProviderComponentDescriptor",
             "RNCSafeAreaViewComponentDescriptor"
           ],
-          "cmakeListsPath": "D:/final year/mini_project/Part2/FaceDetector/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+          "cmakeListsPath": "D:/HydraScan/HydraScan/FaceDetector/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -106,22 +106,46 @@
       }
     },
     "react-native-vision-camera": {
-      "root": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-vision-camera",
+      "root": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-vision-camera",
       "name": "react-native-vision-camera",
       "platforms": {
         "ios": {
-          "podspecPath": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-vision-camera\\VisionCamera.podspec",
-          "version": "4.5.3",
+          "podspecPath": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-vision-camera\\VisionCamera.podspec",
+          "version": "5.2.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-vision-camera\\android",
-          "packageImportPath": "import com.mrousavy.camera.react.CameraPackage;",
-          "packageInstance": "new CameraPackage()",
+          "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-vision-camera\\android",
+          "packageImportPath": "import com.margelo.nitro.camera.VisionCameraPackage;",
+          "packageInstance": "new VisionCameraPackage()",
           "buildTypes": [],
           "componentDescriptors": [],
-          "cmakeListsPath": "D:/final year/mini_project/Part2/FaceDetector/node_modules/react-native-vision-camera/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "D:/HydraScan/HydraScan/FaceDetector/node_modules/react-native-vision-camera/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cxxModuleCMakeListsModuleName": null,
+          "cxxModuleCMakeListsPath": null,
+          "cxxModuleHeaderName": null,
+          "isPureCxxDependency": false
+        }
+      }
+    },
+    "react-native-vision-camera-resizer": {
+      "root": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-vision-camera-resizer",
+      "name": "react-native-vision-camera-resizer",
+      "platforms": {
+        "ios": {
+          "podspecPath": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-vision-camera-resizer\\VisionCameraResizer.podspec",
+          "version": "5.1.1",
+          "configurations": [],
+          "scriptPhases": []
+        },
+        "android": {
+          "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-vision-camera-resizer\\android",
+          "packageImportPath": "import com.margelo.nitro.camera.resizer.VisionCameraResizerPackage;",
+          "packageInstance": "new VisionCameraResizerPackage()",
+          "buildTypes": [],
+          "componentDescriptors": [],
+          "cmakeListsPath": "D:/HydraScan/HydraScan/FaceDetector/node_modules/react-native-vision-camera-resizer/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -130,23 +154,23 @@
       }
     },
     "react-native-worklets": {
-      "root": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-worklets",
+      "root": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-worklets",
       "name": "react-native-worklets",
       "platforms": {
         "ios": {
-          "podspecPath": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-worklets\\RNWorklets.podspec",
+          "podspecPath": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-worklets\\RNWorklets.podspec",
           "version": "0.11.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-worklets\\android",
+          "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-worklets\\android",
           "packageImportPath": "import com.swmansion.worklets.WorkletsPackage;",
           "packageInstance": "new WorkletsPackage()",
           "buildTypes": [],
           "libraryName": "rnworklets",
           "componentDescriptors": [],
-          "cmakeListsPath": "D:/final year/mini_project/Part2/FaceDetector/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "D:/HydraScan/HydraScan/FaceDetector/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -155,48 +179,23 @@
       }
     },
     "react-native-worklets-core": {
-      "root": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-worklets-core",
+      "root": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-worklets-core",
       "name": "react-native-worklets-core",
       "platforms": {
         "ios": {
-          "podspecPath": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-worklets-core\\react-native-worklets-core.podspec",
+          "podspecPath": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-worklets-core\\react-native-worklets-core.podspec",
           "version": "1.6.3",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\react-native-worklets-core\\android",
+          "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\node_modules\\react-native-worklets-core\\android",
           "packageImportPath": "import com.worklets.WorkletsCorePackage;",
           "packageInstance": "new WorkletsCorePackage()",
           "buildTypes": [],
           "libraryName": "RNWorkletsSpec",
           "componentDescriptors": [],
-          "cmakeListsPath": "D:/final year/mini_project/Part2/FaceDetector/node_modules/react-native-worklets-core/android/build/generated/source/codegen/jni/CMakeLists.txt",
-          "cxxModuleCMakeListsModuleName": null,
-          "cxxModuleCMakeListsPath": null,
-          "cxxModuleHeaderName": null,
-          "isPureCxxDependency": false
-        }
-      }
-    },
-    "vision-camera-resize-plugin": {
-      "root": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\vision-camera-resize-plugin",
-      "name": "vision-camera-resize-plugin",
-      "platforms": {
-        "ios": {
-          "podspecPath": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\vision-camera-resize-plugin\\vision-camera-resize-plugin.podspec",
-          "version": "3.2.0",
-          "configurations": [],
-          "scriptPhases": []
-        },
-        "android": {
-          "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\node_modules\\vision-camera-resize-plugin\\android",
-          "packageImportPath": "import com.visioncameraresizeplugin.VisionCameraResizePluginPackage;",
-          "packageInstance": "new VisionCameraResizePluginPackage()",
-          "buildTypes": [],
-          "libraryName": "RNVisionCameraResizePluginSpec",
-          "componentDescriptors": [],
-          "cmakeListsPath": "D:/final year/mini_project/Part2/FaceDetector/node_modules/vision-camera-resize-plugin/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "D:/HydraScan/HydraScan/FaceDetector/node_modules/react-native-worklets-core/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -367,7 +366,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "D:\\final year\\mini_project\\Part2\\FaceDetector"
+          "default": "D:\\HydraScan\\HydraScan\\FaceDetector"
         },
         {
           "name": "--platform <string>",
@@ -667,7 +666,7 @@
   "assets": [],
   "project": {
     "ios": {
-      "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\ios",
+      "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\ios",
       "xcodeProject": {
         "name": "FaceDetector.xcodeproj",
         "path": ".",
@@ -676,7 +675,7 @@
       "assets": []
     },
     "android": {
-      "sourceDir": "D:\\final year\\mini_project\\Part2\\FaceDetector\\android",
+      "sourceDir": "D:\\HydraScan\\HydraScan\\FaceDetector\\android",
       "appName": "app",
       "packageName": "com.facedetector",
       "applicationId": "com.facedetector",
